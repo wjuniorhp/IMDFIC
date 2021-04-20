@@ -1,5 +1,7 @@
+import java.util.*;
+
 public class Aula_2 {
-    public static int varGlobal = 5;
+    public static int varGlobal = 20;
     private static int varLocalClasse = 6;
 
     public static void main(String[] args) {
@@ -9,10 +11,11 @@ public class Aula_2 {
             int varLocalComando = varLocalRotina;
             System.out.println(varLocalComando);
         }
-        System.out.println(varLocalRotina);
+        // System.out.println(varLocalRotina);
         // System.out.println(varLocalComando);
-        System.out.println(varGlobal);
-        System.out.println(varLocalClasse);
+        // rotina2();
+        a1();
+
     }
 
     public static void rotina2() {
@@ -20,5 +23,11 @@ public class Aula_2 {
         // System.out.println(varLocalComando);
         System.out.println(varGlobal);
         System.out.println(varLocalClasse);
+    }
+
+    public static void a1() {
+        String[] letras = {"g","a","t","o"};
+        System.out.println(letras[0]+"55");
+
     }
 }
