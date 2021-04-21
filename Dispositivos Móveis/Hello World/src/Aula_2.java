@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class Aula_2 {
     public static int varGlobal = 20;
     private static int varLocalClasse = 6;
