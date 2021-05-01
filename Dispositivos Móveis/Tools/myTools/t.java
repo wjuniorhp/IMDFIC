@@ -17,6 +17,37 @@ public class t {
         return (ano % 400 == 0 || (ano % 4 == 0 && ano % 100 != 0));
     }
 
+    public static int tamElemento(String tipo) {
+        int tam;
+        switch (tipo) {
+        case "byte":
+            tam = 1;
+            break;
+        case "char":
+            tam = 2;
+            break;
+        case "short":
+            tam = 2;
+            break;
+        case "int":
+            tam = 4;
+            break;
+        case "long":
+            tam = 8;
+            break;
+        case "float":
+            tam = 4;
+            break;
+        case "double":
+            tam = 8;
+            break;
+        default:
+            tam = 0;
+            break;
+        }
+        return tam;
+    }
+
     /* #region Contas */
     public static int maior(int[] valores) {
         int tam = valores.length;
@@ -27,6 +58,16 @@ public class t {
             }
         }
         return maior;
+    }
+
+    public static int maiorMat(int matriz[][]){
+        int nlins = matriz.length;
+        int maiorDasLinhas[] = new int[nlins];
+        for (int i = 0; i < nlins; i++) {
+            maiorDasLinhas[i] = matriz[i][maior(matriz[i])];
+        }
+
+        return maiorDasLinhas[maior(maiorDasLinhas)];
     }
 
     public static int menor(int[] valores) {
@@ -119,6 +160,15 @@ public class t {
     public static void printArray(int[] v) {
         for (int i = 0; i < v.length; i++) {
             System.out.println(v[i]);
+        }
+    }
+
+    public static void printMatrix(int m[][]){
+        for (int[] linha : m) {
+            for (int coluna : linha) {
+                System.out.print(coluna+" ");
+            }
+            System.out.println();
         }
     }
     /* #endregion */
