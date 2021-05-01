@@ -86,10 +86,22 @@ public class t {
         float m = sum / numeros.length;
         return m;
     }
+    public static double media(double[] numeros) {
+        double sum = soma(numeros);
+        double m = sum / numeros.length;
+        return m;
+    }
 
     public static float soma(float[] numeros) {
         float soma = 0;
         for (float numero : numeros) {
+            soma += numero;
+        }
+        return soma;
+    }
+    public static double soma(double[] numeros) {
+        double soma = 0;
+        for (double numero : numeros) {
             soma += numero;
         }
         return soma;
