@@ -36,7 +36,7 @@ public class Semana3 {
     public static void fibonacci() {
         int max = t.readInt("Quantos números na seguência vc quer?");
 
-        int[] seq = t.fib(max);
+        int[] seq = t.fibSeq(max);
 
         t.printArray(seq);
     }
@@ -44,7 +44,7 @@ public class Semana3 {
     public static void fatorial() {
         int n = t.readInt("Quantos número vc quer saber o fatorial?");
 
-        System.out.println(n + "! = " + t.fat(n));
+        System.out.println(n + "! = " + t.fatorial(n));
     }
 
     public static void conversaoT() {

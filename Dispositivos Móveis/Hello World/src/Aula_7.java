@@ -131,23 +131,23 @@ public class Aula_7 {
 
     /* #region Atividade 6 */
     public static void programaSubstring() {
-        System.out.println("Digite seu nome completo:"); 
-		String nome = leitor.next(); 
-		if (nome.length() >=4 && 
-			nome.substring(0, 4).equalsIgnoreCase("João")) { 
-			System.out.println("Olá João!"); 
-		} else { 
-			System.out.println("Epa, você não é João!"); 
-		} 
+        System.out.println("Digite seu nome completo:");
+        String nome = leitor.next();
+        if (nome.length() >= 4 && nome.substring(0, 4).equalsIgnoreCase("João")) {
+            System.out.println("Olá João!");
+        } else {
+            System.out.println("Epa, você não é João!");
+        }
     }
+
     public static void programaSubstringModificado() {
-        System.out.println("Digite seu nome completo:"); 
-		String nome = leitor.next(); 
-		if (nome.substring(0, 4).equalsIgnoreCase("João")) { 
-			System.out.println("Olá João!"); 
-		} else { 
-			System.out.println("Epa, você não é João!"); 
-		} 
+        System.out.println("Digite seu nome completo:");
+        String nome = leitor.next();
+        if (nome.substring(0, 4).equalsIgnoreCase("João")) {
+            System.out.println("Olá João!");
+        } else {
+            System.out.println("Epa, você não é João!");
+        }
     }
     /* #endregion */
 }

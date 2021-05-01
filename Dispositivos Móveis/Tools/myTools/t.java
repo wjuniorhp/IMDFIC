@@ -107,22 +107,40 @@ public class t {
         return soma;
     }
 
-    public static int fat(int n) {
-        int r = 1;
-        for (int i = 2; i <= n; i++) {
-            r *= i;
-        }
-        return r;
+    public static int fatorial(int n) {
+        int fat; 
+		if (n < 0) { 
+			fat = -1; 
+		} else if (n == 0) { 
+			fat = 1; 
+		} else { 
+			fat = fatorial(n - 1) * n; 
+		} 
+		return fat; 
     }
 
-    public static int[] fib(int max) {
+    public static int[] fibSeq(int max) {
+        //retorna a sequencia de fibonacci
         int[] seq = new int[max];
-        seq[0] = 0;
-        seq[1] = 1;
-        for (int i = 2; i < max; i++) {
-            seq[i] = seq[i - 2] + seq[i - 1];
+        for (int i = 0; i < max; i++) {
+            seq[i] = fibonacci(i+1);
         }
         return seq;
+    }
+    public static int fibonacci(int n) {
+        int fib;
+        switch (n) {
+        case 0:
+            fib = 0;
+            break;
+        case 1:
+            fib = 1;
+            break;
+        default:
+            fib = fibonacci(n - 1) + fibonacci(n - 2);
+            break;
+        }
+        return fib;
     }
     /* #endregion */
 
